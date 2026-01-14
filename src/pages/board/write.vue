@@ -26,7 +26,7 @@
 
             <v-divider></v-divider>
 
-            <v-card-actions class="pa-4 d-flex justify-end gap-2">
+            <v-card-actions class="pa-4 d-flex justify-end">
               <v-btn variant="outlined" color="grey-darken-1" size="large" to="/board/list" :disabled="loading">
                 취소
               </v-btn>
@@ -96,9 +96,3 @@ const submitForm = async () => {
   }
 };
 </script>
-
-<style scoped>
-.gap-2 {
-  gap: 8px;
-}
-</style>
