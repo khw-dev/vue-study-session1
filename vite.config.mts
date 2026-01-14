@@ -66,5 +66,11 @@ export default defineConfig({
   },
   server: {
     port: 3001,
+    proxy: {
+      '/api': {
+        target: 'http://userinsight.co.kr:1080',
+        changeOrigin: true,
+      }
+    }
   },
 })

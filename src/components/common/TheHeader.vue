@@ -10,6 +10,7 @@
       <div class="d-none d-md-flex">
         <v-btn variant="text" to="/">홈</v-btn>
         <v-btn variant="text" to="/chat/enterence">채팅</v-btn>
+        <v-btn variant="text" to="/board/list">게시판</v-btn>
       </div>
 
       <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
