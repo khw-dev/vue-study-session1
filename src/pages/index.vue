@@ -11,10 +11,10 @@
           </p>
 
           <div class="d-flex justify-center ga-4">
-            <v-btn color="primary" size="x-large" to="/" elevation="2">
+            <v-btn color="primary" elevation="2" size="x-large" to="/">
               시작하기
             </v-btn>
-            <v-btn variant="outlined" size="x-large" href="https://vuetifyjs.com" target="_blank">
+            <v-btn href="https://vuetifyjs.com" size="x-large" target="_blank" variant="outlined">
               문서 보기
             </v-btn>
           </div>
@@ -43,18 +43,18 @@
 </template>
 
 <script setup>
-const features = [
-  {
-    title: '⚡ 빠른 시작',
-    description: 'Spring Boot와 Vite를 이용해 프론트/백엔드를 빠르게 구성하고 개발을 시작할 수 있습니다.'
-  },
-  {
-    title: '🎨 Vuetify 디자인',
-    description: 'Material Design 기반의 Vuetify 3 컴포넌트를 사용하여 아름다운 UI를 쉽게 구성해보세요.'
-  },
-  {
-    title: '🐲 Vue.js',
-    description: '더 이상 서버 템플릿 엔진이 아닙니다. SPA(Single Page Application)의 강력한 반응성을 경험하세요.'
-  }
-];
+  const features = [
+    {
+      title: '⚡ 빠른 시작',
+      description: 'Spring Boot와 Vite를 이용해 프론트/백엔드를 빠르게 구성하고 개발을 시작할 수 있습니다.',
+    },
+    {
+      title: '🎨 Vuetify 디자인',
+      description: 'Material Design 기반의 Vuetify 3 컴포넌트를 사용하여 아름다운 UI를 쉽게 구성해보세요.',
+    },
+    {
+      title: '🐲 Vue.js',
+      description: '더 이상 서버 템플릿 엔진이 아닙니다. SPA(Single Page Application)의 강력한 반응성을 경험하세요.',
+    },
+  ]
 </script>

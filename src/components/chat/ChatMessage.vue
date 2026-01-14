@@ -6,10 +6,15 @@
         {{ message.username }}
       </div>
 
-      <v-sheet :color="message.isMine ? 'primary' : 'grey-lighten-3'" :class="[
-        'px-4 py-2 text-body-1',
-        message.isMine ? 'text-white rounded-br-0' : 'text-high-emphasis rounded-bl-0'
-      ]" rounded="xl" elevation="1">
+      <v-sheet
+        :class="[
+          'px-4 py-2 text-body-1',
+          message.isMine ? 'text-white rounded-br-0' : 'text-high-emphasis rounded-bl-0'
+        ]"
+        :color="message.isMine ? 'primary' : 'grey-lighten-3'"
+        elevation="1"
+        rounded="xl"
+      >
         {{ message.message }}
       </v-sheet>
 
@@ -19,11 +24,11 @@
 
 <script setup>
 // 부모로부터 message 객체를 받습니다.
-const props = defineProps({
-  message: {
-    type: Object,
-    required: true,
+  const props = defineProps({
+    message: {
+      type: Object,
+      required: true,
     // 구조 예시: { username: 'user1', message: 'hello', isMine: true }
-  }
-});
+    },
+  })
 </script>
