@@ -27,8 +27,8 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
+import { ref } from 'vue'
 
-  // 모바일 드로어 상태 제어
-  const drawer = ref(false)
+// 모바일 드로어 상태 제어
+const drawer = ref(false)
 </script>
